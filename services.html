@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | One Nine Photography</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .services-header {
+      padding: 12rem 5% 4rem;
+      text-align: center;
+      background: var(--bg-secondary);
+    }
+    
+    .detailed-services {
+      padding: 5rem 5%;
+    }
+    
+    .service-row {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      margin-bottom: 6rem;
+    }
+    
+    .service-row:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    
+    .service-image {
+      flex: 1;
+      position: relative;
+    }
+    
+    .service-image img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    
+    .service-info {
+      flex: 1;
+    }
+    
+    .service-info h2 {
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+    
+    .service-info p {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    
+    .service-features {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    
+    .service-features li {
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .service-features li::before {
+      content: '✓';
+      color: var(--accent-color);
+    }
+    
+    @media (max-width: 900px) {
+      .service-row, .service-row:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar" class="scrolled">
+    <div class="logo">One Nine</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="services.html" style="color: var(--accent-color);">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">☰</div>
+  </nav>
+
+  <header class="services-header fade-in-on-scroll">
+    <h1>Our Expertise</h1>
+    <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto;">We offer comprehensive premium photography and cinematography services tailored to your unique story.</p>
+  </header>
+
+  <section class="detailed-services">
+    <div class="service-row fade-in-on-scroll">
+      <div class="service-image">
+        <img src="images/portfolio_1.jpg" alt="Wedding Photography">
+      </div>
+      <div class="service-info">
+        <h2>Luxury Wedding Photography</h2>
+        <p>Your wedding day is a masterpiece of emotions. We capture every tear, smile, and fleeting moment with a cinematic and artistic approach, ensuring your memories look as beautiful as they felt.</p>
+        <ul class="service-features">
+          <li>Full-day coverage</li>
+          <li>Two senior photographers</li>
+          <li>High-resolution edited images</li>
+          <li>Premium flush-mount albums</li>
+        </ul>
+        <a href="contact.html" class="btn">Inquire Now</a>
+      </div>
+    </div>
+    
+    <div class="service-row fade-in-on-scroll">
+      <div class="service-image">
+        <img src="images/portfolio_2.png" alt="Traditional Kerala Weddings">
+      </div>
+      <div class="service-info">
+        <h2>Traditional Kerala Weddings</h2>
+        <p>Honoring the rich culture and deep-rooted traditions of Kerala weddings while applying a modern, high-end visual aesthetic.</p>
+        <ul class="service-features">
+          <li>Cultural expertise</li>
+          <li>Vibrant color grading</li>
+          <li>Detailed ritual coverage</li>
+        </ul>
+        <a href="contact.html" class="btn">Inquire Now</a>
+      </div>
+    </div>
+    
+    <div class="service-row fade-in-on-scroll">
+      <div class="service-image">
+        <img src="images/portfolio_3.png" alt="Pre-Wedding Shoots">
+      </div>
+      <div class="service-info">
+        <h2>Cinematic Pre-Wedding</h2>
+        <p>A relaxed, creative session to celebrate your engagement. We shoot in breathtaking locations to create intimate, cinematic portraits.</p>
+        <ul class="service-features">
+          <li>Location scouting</li>
+          <li>Concept and styling guidance</li>
+          <li>Cinematic highlight teaser</li>
+        </ul>
+        <a href="contact.html" class="btn">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4 style="font-size: 1.2rem; font-weight: 500;">One Nine Photography</h4>
+        <p>Luxury Wedding & Cinematic Photography based in Kerala.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Location</h4>
+        <p>Thundathumkadavu,<br>Varapuzha, Kerala 683517</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Phone: <a href="tel:+919746515888">+91 97465 15888</a></p>
+        <p>Email: hello@oneninephotography.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 One Nine Photography. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
